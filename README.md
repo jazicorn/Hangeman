@@ -8,7 +8,7 @@ Console-Line version of hangman. User must guess the word given by the program.
 #### Software & Tools Used
 
 - Java 17
-- Maven 4.0.0
+- Gradle 7.3.3
 
 ### Set-up Instructions
 
@@ -18,18 +18,18 @@ Enter command into commandline
 git clone https://github.com/jazicorn/Hangman.git
 ```
 
-### Usage
-Make sure you are in the top program folder that contains pom.xml file. <br>
+### Usage - Mac OS
+Make sure you are in the top folder of the project. <br>
 Enter and run each step in commandline.
 
 ##### Step 1
 ```bash
-mvn clean package
+./gradlew build 
 ```
 
 ##### Step 2
 ```bash
-java -cp target/Hangman-1.0-SNAPSHOT.jar Hangman.Main
+./gradlew run
 ```
 
 <hr />
