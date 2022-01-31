@@ -7,6 +7,14 @@ User must guess the word given by the program.
 
 #### Project Instructions
 0. Install Project Tools
+
+Information
+|  Tool  | Version |     Purpose     | Documentation |
+| :----- | :-----: | :-------------- | :-----------: |
+| Java   |  17    | Language        | [Docs](https://docs.oracle.com/en/java/javase/17/) |
+| Gradle |  7.3.3  | Build Platform  | [Docs](https://docs.gradle.org/current/userguide/userguide.html) |
+| Groovy |  4.0.0  | Build Script DSL| [Docs](https://groovy-lang.org/documentation.html) |
+
 1. Clone Repository
 ```bash
 git clone https://github.com/jazicorn/Hangman.git
@@ -25,13 +33,6 @@ git clone https://github.com/jazicorn/Hangman.git
 - [X] Choose Maven or Gradle
 - [X] Create .gitignore
 - [X] Project Checklist
-
-Project Tools Information
-|  Tool  | Version |     Purpose     | Documentation |
-| :----- | :-----: | :-------------- | :-----------: |
-| Java   |   17    | Language        | [Docs](https://docs.oracle.com/en/java/javase/17/) |
-| Gradle |  7.3.3  | Build Platform  | [Docs](https://docs.gradle.org/current/userguide/userguide.html) |
-| Groovy |  4.0.0  | Build Script DSL| [Docs](https://groovy-lang.org/documentation.html) |
 
 Project Dependencies
 |  Tool  | Version |     Purpose     | Documentation |
