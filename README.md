@@ -6,8 +6,8 @@ Console-Line version of Hangman. <br>
 User must guess the word given by the program. 
 
 #### Project Instructions
-
 0. Install Project Tools
+
 |  Tool  | Version |     Purpose     | Documentation |
 | :----- | :-----: | :-------------- | :-----------: |
 | Java   |  17     | Language        | [Docs](https://docs.oracle.com/en/java/javase/17/) |
