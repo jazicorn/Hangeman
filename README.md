@@ -1,15 +1,13 @@
 ## Hangman
 
 ### About
-===
-
+<hr style="border:.px solid gray">
 Project built for Pyramid Academy (GenSpark).<br>
 Console-Line version of Hangman. <br>
 User must guess the word given by the program. 
 
 #### Project Instructions
-===
-
+<hr style="border:.px solid gray">
 0. Install Project Tools
 1. Clone Repository
 ```bash
@@ -25,8 +23,7 @@ git clone https://github.com/jazicorn/Hangman.git
 ```
 
 #### Project Set-up
-===
-
+<hr style="border:.px solid gray">
 - [X] Create GitHub Repository
 - [X] Choose Maven or Gradle
 - [X] Create .gitignore
@@ -45,8 +42,7 @@ Project Dependencies
 | JUnit  |    5    | Testing         | [Docs](https://junit.org/junit5/docs/current/user-guide/) |
 
 #### Project Checklist
-===
-
+<hr style="border:.px solid gray">
 - [ ] Class: Drawings
 - [ ] File: Create words.txt file
 - [ ] File: Read/Write words.txt file
@@ -60,6 +56,5 @@ Project Dependencies
 - [ ] Process finished with exit code 0
 - [ ] Unit testing
 
-<hr />
-
+<hr style="border:.px solid gray">
 #### License: [MIT](https://choosealicense.com/licenses/mit/)
