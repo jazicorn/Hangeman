@@ -4,6 +4,7 @@
 
 # batchscript for multiple maven commands
 batchscript
+runscript
 
 # planner
 plan.md
