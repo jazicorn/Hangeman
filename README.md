@@ -14,6 +14,35 @@ User must guess the word given by the program.
 | Gradle |  7.3.3  | Build Platform  | [Docs](https://docs.gradle.org/current/userguide/userguide.html) |
 | Groovy |  4.0.0  | Build Script DSL| [Docs](https://groovy-lang.org/documentation.html) |
 
+
+### Installation (MacOS)
+
+#### Documents By Docsify
+to use docsify:
+```bash
+# add global install of docisify
+yarn global add docsify-cli 
+
+# initialize docs folder with docsify files
+docsify init ./docs
+```
+```bash
+# command to display readme's in browser
+docsify serve ./docs
+
+# results
+Serving /Users/jasmineanderson/Genspark/Projects/Hangman/docs now.
+Listening at http://localhost:3000
+```
+
+<!-- ### Features -->
+
+### App module
+0. Install Programs
+    * Java
+    * Gradle
+    * Groovy
+    
 1. Clone Repository
 ```bash
 git clone https://github.com/jazicorn/Hangman.git
