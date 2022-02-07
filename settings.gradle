@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'Hangman'
-include('project-app')
+include('product-app')
