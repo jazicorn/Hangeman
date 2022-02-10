@@ -10,14 +10,12 @@ public class Gameword {
     private String underScoreWord = "";
 
     private int randomWordLength;
-    private int underScoreWordLength;
 
     private ArrayList<String> wordList;
 
     public Gameword() throws IOException {
 
         setWordsList("words.txt");
-
         setRandomWord();
 
     }
@@ -98,9 +96,7 @@ public class Gameword {
         return randomWordLength;
     }
 
-    public void setUnderScoreWord(String underscores) {
-        this.underScoreWord = underscores;
-    }
+    public void setUnderScoreWord(String underscores) { this.underScoreWord = underscores; }
 
     public String getUnderScoreLength() {
         int length = getRandomWordLength();
