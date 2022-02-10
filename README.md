@@ -20,7 +20,8 @@ User must guess the word given by the program.
 - [X] Project Checklist
 
 #### Project Checklist
-- [ ] Class: Drawings
+- [X] Class: Drawings
+- [ ] Class: Gameplay
 - [ ] File: Create words.txt file
 - [ ] File: Read/Write words.txt file
 - [ ] Function: wordRandom()
