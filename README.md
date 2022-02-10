@@ -21,9 +21,18 @@ User must guess the word given by the program.
 
 #### Project Checklist
 - [X] Class: Drawings
-- [ ] Class: Gameplay
-- [ ] File: Create words.txt file
-- [ ] File: Read/Write words.txt file
+
+- Gameword Code:
+- [X] Class: Gameword
+- [X] File: Create words.txt file
+- [X] File: Read/Write words.txt file
+- [ ] File: add more words to word.txt files
+- [X] Function: Get Words from file
+- [X] Function: Add words to ArrayList
+- [X] Function: Generate random word from list
+
+- Gameplay Code:
+- [X] Class: Gameplay
 - [ ] Function: wordRandom()
 - [ ] Function: wordDigits()
 - [ ] Function: letterGuess()
