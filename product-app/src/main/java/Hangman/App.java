@@ -3,18 +3,18 @@
  */
 package Hangman;
 
-import java.util.ArrayList;
+import java.io.IOException;
 
 public class App {
 
-    public void getDrawings() {
-        ArrayList<String> drawings = new Drawings().getDrawings();
-        System.out.println(drawings);
-    }
+    public static void main(String[] args) throws IOException {
 
-    public static void main(String[] args) {
+        System.out.println("Test Statements: App");
+        System.out.println("Welcome");
 
-        new App().getDrawings();
+        Gameword gameword = new Gameword();
+        gameword.test();
+
     }
 
 }

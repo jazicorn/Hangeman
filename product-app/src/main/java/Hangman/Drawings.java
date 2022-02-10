@@ -1,5 +1,6 @@
 package Hangman;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Drawings {
@@ -22,13 +23,36 @@ public class Drawings {
         };
     }
 
-    public ArrayList<String> getDrawings() {
+    public void setDrawing(int step, String picture) {
+        switch (step) {
+            case (0) -> this.base = picture;
+            case (1) -> this.step1 = picture;
+            case (2) -> this.step2 = picture;
+            case (3) -> this.step3 = picture;
+            case (4) -> this.step4 = picture;
+            case (5) -> this.step5 = picture;
+            case (6) -> this.step6 = picture;
+            default -> throw new IllegalStateException("Unexpected value: " + step);
+        }
+    }
+
+    public ArrayList<String> getDrawingsList() {
         ArrayList<String> drawings = new ArrayList<>();
         for(int i = 0; i < 7; i++) {
             String draw = getDrawing(i);
             drawings.add(draw);
         }
         return drawings;
+    }
+
+    public void setDrawingsList(ArrayList<String> drawings) {
+        for(int i = 0; i < drawings.size(); i++) {
+            setDrawing(i, drawings.get(i));
+        }
+    }
+
+    public void getAllDrawings() {
+        System.out.println(getDrawingsList());
     }
 
     private String base = String.format("%s\n",
@@ -144,28 +168,5 @@ public class Drawings {
     public String getStep6() {
         return step6;
     }
-
-    public void setBase (String base) {
-        this.base = base;
-    }
-    public void setStep1 (String step1) {
-        this.step1 = step1;
-    }
-    public void setStep2 (String step2) {
-        this.step2 = step2;
-    }
-    public void setStep3 (String step3) {
-        this.step3 = step3;
-    }
-    public void setStep4 (String step4) {
-        this.step4 = step4;
-    }
-    public void setStep5 (String step5) {
-        this.step5 = step5;
-    }
-    public void setStep6 (String step6) {
-        this.step6 = step6;
-    }
-
 
 }
