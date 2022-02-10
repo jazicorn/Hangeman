@@ -3,12 +3,18 @@
  */
 package Hangman;
 
+import java.util.ArrayList;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
+
+    public void getDrawings() {
+        ArrayList<String> drawings = new Drawings().getDrawings();
+        System.out.println(drawings);
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        new App().getDrawings();
     }
+
 }

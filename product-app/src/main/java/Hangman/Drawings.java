@@ -1,9 +1,16 @@
 package Hangman;
 
+import java.util.ArrayList;
+
 public class Drawings {
 
-    public Drawings(int step) {
-        switch(step) {
+    public Drawings() {
+
+
+    }
+
+    public String getDrawing(int step) {
+        return switch (step) {
             case (0) -> getBase();
             case (1) -> getStep1();
             case (2) -> getStep2();
@@ -11,7 +18,17 @@ public class Drawings {
             case (4) -> getStep4();
             case (5) -> getStep5();
             case (6) -> getStep6();
+            default -> throw new IllegalStateException("Unexpected value: " + step);
+        };
+    }
+
+    public ArrayList<String> getDrawings() {
+        ArrayList<String> drawings = new ArrayList<>();
+        for(int i = 0; i < 7; i++) {
+            String draw = getDrawing(i);
+            drawings.add(draw);
         }
+        return drawings;
     }
 
     private String base = String.format("%s\n",
@@ -42,16 +59,16 @@ public class Drawings {
 
     private String step2 = String.format("%s\n",
             """
-                    +---+
+                +---+
+                
+                O   |
                     
-                    O   |
-                        
-                    |   |
-                        
-                        |
-                        
-                        = = =
-                """);
+                |   |
+                    
+                    |
+                    
+                    = = =
+            """);
 
 
     private String step3 = String.format("%s\n",
@@ -59,7 +76,7 @@ public class Drawings {
                 +---+
                 
                 O   |
-                  /
+                 /
                 |   |
                     
                     |
@@ -72,7 +89,7 @@ public class Drawings {
                 +---+
                 
                 O   |
-              \\  /
+               \\ /
                 |   |
                     
                     |
@@ -85,9 +102,9 @@ public class Drawings {
                 +---+
                 
                 O   |
-              \\  /
+               \\ /
                 |   |
-                  \\
+                 \\
                     |
                     
                     = = =
@@ -98,9 +115,9 @@ public class Drawings {
                 +---+
                 
                 O   |
-              \\  /
+               \\ /
                 |   |
-              //  \\
+               / \\
                     |
                     
                     = = =
